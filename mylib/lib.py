@@ -1,4 +1,3 @@
-import sqlite3
 import csv
 
 
@@ -37,7 +36,8 @@ def load_data_from_csv(conn, table_name, file_path):
     with open(file_path, newline="") as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None)
-        insert_query = f"INSERT INTO {table_name} (id, restaurant, review_score, review_year) VALUES (?, ?, ?, ?)"
+        insert_query = f"INSERT INTO {table_name} \
+            (id, restaurant, review_score, review_year) VALUES (?, ?, ?, ?)"
         for row in reader:
             id, restaurant, review_score, review_year = row
             conn.execute(
