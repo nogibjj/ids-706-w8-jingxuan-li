@@ -4,21 +4,25 @@
    - The command created a table named `my_table`.
    - Memory usage before and after the operation remained the same (0 KB).
    - The operation completed quickly, in 0.05 seconds, indicating efficient table creation without additional memory overhead.
+![2681730159184_ pic](https://github.com/user-attachments/assets/6644af42-de47-4bc8-b4b4-570dd393d075)
 
 2. **Table Deletion (`d my_table`)**:
    - The command successfully dropped the table `my_table`.
    - Memory usage before and after the operation was identical (0 KB).
    - This operation also completed swiftly in 0.04 seconds, showing that the deletion process didn’t incur any memory change or additional load.
+![2691730159240_ pic](https://github.com/user-attachments/assets/1a8376f7-c40a-45db-9af5-0a2613ac432f)
 
 3. **Data Load (`t my_table ./data/RestaurantReviews.csv`)**:
    - This command loaded data from `RestaurantReviews.csv` into `my_table`.
    - Memory usage remained unchanged before and after the operation (0 KB).
    - Execution time was 0.05 seconds, indicating that the data load was performed efficiently without impacting memory usage significantly.
+![2711730159295_ pic](https://github.com/user-attachments/assets/085ba046-df8c-4629-88d3-2a707810419f)
 
 4. **Query Execution (`q "SELECT * FROM my_table;"`)**:
    - The query retrieved all entries from `my_table`.
    - Memory usage remained constant (0 KB).
    - The command executed in 0.04 seconds, showing efficient query processing and minimal resource utilization.
+![2721730159336_ pic](https://github.com/user-attachments/assets/38defd02-d24b-49fe-88b8-d3d06d13006f)
 
 
 # For Python：
@@ -40,6 +44,7 @@
    - The table `my_table` was deleted successfully.
    - **Execution Time**: 0.01 seconds, indicating quick cleanup.
    - **Memory Usage**: Increased slightly from 1004.00 KB to 1136.00 KB
+![2671730152291_ pic](https://github.com/user-attachments/assets/1335ffa9-e4b6-454c-b800-b4e91e54330a)
 
 # Comparison
 ### 1. **Execution Time Comparison**
