@@ -4,6 +4,7 @@ from mylib.lib import create_table, query_exec, drop_table, load_data_from_csv
 import time
 import psutil
 
+
 def main():
     start_time = time.time()
     parser = argparse.ArgumentParser(description="SQLite CLI tool")
@@ -74,10 +75,11 @@ def main():
 
     print(f"Memory usage: {(end_memory - start_memory) / 1024:.2f} KB")
 
+
 if __name__ == "__main__":
     main()
 
-# python3 main.py create my_table 
+# python3 main.py create my_table
 # python3 main.py load my_table data/RestaurantReviews.csv
-# python3 main.py query "SELECT * FROM my_table" 
+# python3 main.py query "SELECT * FROM my_table"
 # python3 main.py delete my_table
