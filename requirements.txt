@@ -10,4 +10,4 @@ databricks-sql-connector
 python-dotenv
 pandas
 csvkit
-
+psutil
